@@ -22,7 +22,27 @@ def main(speed=0, bg_color="grey"):
         pos = [np.random.randint(-300, 300), np.random.randint(-300, 300)]
 
         """TODO: set snowflake color here (one of the colors defined above)"""
-
+         i = random.random() 
+        if i >= 0.9:
+            myTurtle.color("red")
+        elif i >= 0.8:
+            myTurtle.color("white")
+        elif i >= 0.7:
+            myTurtle.color("blue")
+        elif i >= 0.6:
+            myTurtle.color("black")
+        elif i >= 0.5:
+            myTurtle.color("green")
+        elif i >= 0.4:
+            myTurtle.color("yellow")
+        elif i >= 0.3:
+            myTurtle.color("pink")
+        elif i >= 0.2:
+            myTurtle.color("purple")
+        elif i >= 0.1:
+            myTurtle.color("gold")
+        else:
+            myTurtle.color("orange")
         # Go to the start position of the snowflake
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
